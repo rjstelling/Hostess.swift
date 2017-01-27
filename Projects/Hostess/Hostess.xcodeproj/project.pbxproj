@@ -28,7 +28,7 @@
 		2AB7ACD01D5352EF00A5F64A /* Host.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Host.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AE806A71CFDE62700FDDB2F /* Host.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Host.xcconfig; sourceTree = "<group>"; };
+		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
 		2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-mac.modulemap"; path = "Maps/custom-mac.modulemap"; sourceTree = "<group>"; };
 		2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-phoneos.modulemap"; path = "Maps/custom-phoneos.modulemap"; sourceTree = "<group>"; };
 		2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-simulator.modulemap"; path = "Maps/custom-simulator.modulemap"; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		2AE806841CFDE04200FDDB2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2AE806A71CFDE62700FDDB2F /* Host.xcconfig */,
+				2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */,
 				2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */,
 				2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */,
 				2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */,
@@ -296,7 +296,7 @@
 /* Begin XCBuildConfiguration section */
 		2AB7ACD51D5352EF00A5F64A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -318,7 +318,7 @@
 		};
 		2AB7ACD61D5352EF00A5F64A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -440,7 +440,7 @@
 		};
 		2AE8067B1CFDDE3200FDDB2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -464,7 +464,7 @@
 		};
 		2AE8067C1CFDDE3200FDDB2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Host.xcconfig */;
+			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
