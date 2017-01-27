@@ -1,4 +1,4 @@
-[![Host.swift](https://github.com/rjstelling/Host.swift/blob/master/Resources/Hero.png)](#)
+[![Hostess.swift](https://github.com/rjstelling/Hostess.swift/blob/master/Resources/Hero.png)](#)
 
 [![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](#)
 [![Platform](https://img.shields.io/badge/Platform-iOS, macOS & tvOS-lightgrey.svg?style=flat)](#)
