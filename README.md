@@ -20,8 +20,8 @@ Hostess.swift does not use a bridging header, so is safe to use in Framework dev
 ## Example
 
 ``` swift
-let host = Host()
-let deviceIP = host.addresses.first
+let hostess = Hostess()
+let deviceIP = hostess.addresses.first
 print("IP: \(deviceIP)") // Will print a dot-separated IP address, e.g: 17.24.2.55
 ```
 
