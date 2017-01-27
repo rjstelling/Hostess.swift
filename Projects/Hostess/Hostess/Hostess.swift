@@ -31,39 +31,6 @@ import SystemConfiguration.CaptiveNetwork //SSID
 // TODO:    - IPv6 Support
 //          - WAN Address
 
-/// This is much simplier than changing eery call site.
-#if !swift(>=3.0)
-extension String {
-    public init?(cString: UnsafePointer<CChar>, encoding enc: String.Encoding) {
-        self.init(CString: cString, encoding: enc)
-    }
-}
-
-    extension CFArray {
-        
-        func cast() -> [String]? {
-
-            guard let cast0 = self as? [AnyObject] else {
-                return nil
-            }
-            
-            return cast0 as? [String]
-        }
-    }
-    
-    extension CFDictionary {
-        
-        func cast() -> [String:AnyObject]? {
-            
-            guard let cast0 = self as? AnyObject else {
-                return nil
-            }
-            
-            return cast0 as? [String:AnyObject]
-        }
-    }
-
-#endif
 
 @available(iOS 9.3, OSX 10.11, *)
 final public class Hostess {
@@ -87,13 +54,13 @@ final public class Hostess {
     
     fileprivate func getSSID() -> String? {
 
-        guard let interfaces: [String] = CNCopySupportedInterfaces()?.cast() else {
+        guard let interfaces = CNCopySupportedInterfaces() as? [String] else {
             return nil
         }
         
         for intf in interfaces {
             
-            if let interface = CNCopyCurrentNetworkInfo(intf as CFString)?.cast() {
+            if let interface = CNCopyCurrentNetworkInfo(intf as CFString) as? [String : AnyObject] {
                 
                 return interface["SSID"] as? String
             }
@@ -120,7 +87,9 @@ final public class Hostess {
     fileprivate func getAddresses() -> [String] {
         
         var addresses: [String] = []
-        var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
+        //var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
+        // How many interface will we get? Will it crash if not enough?
+        var interfaces: UnsafeMutablePointer<ifaddrs>? = UnsafeMutablePointer<ifaddrs>.allocate(capacity: 32)
         
         // Use `getifaddrs()` to fill the ifaddrs struct, this is a linked list
         guard getifaddrs(&interfaces) == 0 else {
