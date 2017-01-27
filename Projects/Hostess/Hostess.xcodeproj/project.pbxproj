@@ -25,7 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AB7ACD01D5352EF00A5F64A /* Host.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Host.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB7ACD01D5352EF00A5F64A /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			children = (
 				2AE806661CFDDE3200FDDB2F /* Hostess.framework */,
 				2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */,
-				2AB7ACD01D5352EF00A5F64A /* Host.framework */,
+				2AB7ACD01D5352EF00A5F64A /* Hostess.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			);
 			name = "Hostess macOS";
 			productName = "Host macOS";
-			productReference = 2AB7ACD01D5352EF00A5F64A /* Host.framework */;
+			productReference = 2AB7ACD01D5352EF00A5F64A /* Hostess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2AE806651CFDDE3200FDDB2F /* Hostess iOS */ = {
@@ -311,7 +311,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Host-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Hostess-macOS";
+				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -333,7 +334,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Host-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Hostess-macOS";
+				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -603,7 +605,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Host-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.empiricalmagic.Hostess-macOS";
+				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
