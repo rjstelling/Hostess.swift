@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-               BuildableName = "Hostess.framework"
-               BlueprintName = "Hostess iOS"
-               ReferencedContainer = "container:Hostess.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2AE8066F1CFDDE3200FDDB2F"
-               BuildableName = "HostessTests.xctest"
-               BlueprintName = "HostessTests"
-               ReferencedContainer = "container:Hostess.xcodeproj">
+               BlueprintIdentifier = "2AE8068E1CFDE34F00FDDB2F"
+               BuildableName = "Host Example.app"
+               BlueprintName = "iOS Example"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Hostess.framework"
-            BlueprintName = "Hostess iOS"
-            ReferencedContainer = "container:Hostess.xcodeproj">
+            BlueprintIdentifier = "2AE8068E1CFDE34F00FDDB2F"
+            BuildableName = "Host Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,22 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Hostess.framework"
-            BlueprintName = "Hostess iOS"
-            ReferencedContainer = "container:Hostess.xcodeproj">
+            BlueprintIdentifier = "2AE8068E1CFDE34F00FDDB2F"
+            BuildableName = "Host Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "XCODE_BETA"
-            value = "-xcode-beta"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AE806651CFDDE3200FDDB2F"
-            BuildableName = "Hostess.framework"
-            BlueprintName = "Hostess iOS"
-            ReferencedContainer = "container:Hostess.xcodeproj">
+            BlueprintIdentifier = "2AE8068E1CFDE34F00FDDB2F"
+            BuildableName = "Host Example.app"
+            BlueprintName = "iOS Example"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "DebugBeta">
