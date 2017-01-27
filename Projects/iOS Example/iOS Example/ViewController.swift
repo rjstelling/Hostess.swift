@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Host
+import Hostess
 
 class ViewController: UIViewController {
 

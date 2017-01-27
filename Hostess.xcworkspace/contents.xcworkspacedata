@@ -5,6 +5,6 @@
       location = "group:Projects/iOS Example/iOS Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Projects/Host/Host.xcodeproj">
+      location = "group:Projects/Hostess/Hostess.xcodeproj">
    </FileRef>
 </Workspace>

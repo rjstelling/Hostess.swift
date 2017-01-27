@@ -1,15 +1,15 @@
 //
-//  HostTests.swift
-//  HostTests
+//  HostessTests.swift
+//  HostessTests
 //
 //  Created by Richard Stelling on 31/05/2016.
 //  Copyright © 2016 Richard Stelling. All rights reserved.
 //
 
 import XCTest
-@testable import Host
+@testable import Hostess
 
-class HostTests: XCTestCase {
+class HostessTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

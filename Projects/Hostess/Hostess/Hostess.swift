@@ -1,5 +1,5 @@
 //
-//  Host.swift
+//  Hostess.swift
 //
 //  Created by Richard Stelling on 20/05/2016.
 //
@@ -66,7 +66,7 @@ extension String {
 #endif
 
 @available(iOS 9.3, OSX 10.11, *)
-final public class Host {
+final public class Hostess {
     
     /// Connected SSID if available
     public var ssid: String? {
