@@ -15,16 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var addresses: UILabel!
     @IBOutlet weak var ssid: UILabel!
     
-    let host = Host()
+    let hostess = Hostess()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hostname.text = host.name
-        addresses.text = host.addresses.reduce("") {
+        hostname.text = hostess.name
+        addresses.text = hostess.addresses.reduce("") {
             return "\($0!)\($1)\n"
         }
-        ssid.text = host.ssid
+        ssid.text = hostess.ssid
     }
 
     override func didReceiveMemoryWarning() {
