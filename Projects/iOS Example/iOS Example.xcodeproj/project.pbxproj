@@ -12,7 +12,8 @@
 		2AE8069A1CFDE34F00FDDB2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE806991CFDE34F00FDDB2F /* Assets.xcassets */; };
 		2AE8069D1CFDE34F00FDDB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE8069B1CFDE34F00FDDB2F /* LaunchScreen.storyboard */; };
 		2AE806A51CFDE39B00FDDB2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE806A41CFDE39B00FDDB2F /* Main.storyboard */; };
-		E89ADB5D1E3B66E000640A0C /* Hostess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89ADB5C1E3B66E000640A0C /* Hostess.framework */; };
+		E89E69861E3B7E8200DDE54B /* Hostess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89E69851E3B7E8200DDE54B /* Hostess.framework */; };
+		E89E69871E3B7E8D00DDE54B /* Hostess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E89E69851E3B7E8200DDE54B /* Hostess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E89E69871E3B7E8D00DDE54B /* Hostess.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +38,7 @@
 		2AE8069C1CFDE34F00FDDB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AE8069E1CFDE34F00FDDB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE806A41CFDE39B00FDDB2F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		E89ADB5C1E3B66E000640A0C /* Hostess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hostess.framework; path = "../Host/build/Debug-iphoneos/Hostess.framework"; sourceTree = "<group>"; };
+		E89E69851E3B7E8200DDE54B /* Hostess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89ADB5D1E3B66E000640A0C /* Hostess.framework in Frameworks */,
+				E89E69861E3B7E8200DDE54B /* Hostess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +86,7 @@
 		2AE806B51CFDF1AD00FDDB2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E89ADB5C1E3B66E000640A0C /* Hostess.framework */,
+				E89E69851E3B7E8200DDE54B /* Hostess.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
