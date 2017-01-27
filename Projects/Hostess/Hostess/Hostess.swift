@@ -34,7 +34,7 @@ import SystemConfiguration.CaptiveNetwork //SSID
 /// This is much simplier than changing eery call site.
 #if !swift(>=3.0)
 extension String {
-    public init?(cString: UnsafePointer<CChar>, encoding enc: NSStringEncoding) {
+    public init?(cString: UnsafePointer<CChar>, encoding enc: String.Encoding) {
         self.init(CString: cString, encoding: enc)
     }
 }
@@ -85,7 +85,7 @@ final public class Hostess {
     
     public init() {}
     
-    private func getSSID() -> String? {
+    fileprivate func getSSID() -> String? {
 
         guard let interfaces: [String] = CNCopySupportedInterfaces()?.cast() else {
             return nil
@@ -102,22 +102,22 @@ final public class Hostess {
         return nil
     }
     
-    private func getHostname() -> String? {
+    fileprivate func getHostname() -> String? {
         
     #if swift(>=3.0)
         var hostname = [CChar](repeating: 0x0 ,count: Int(NI_MAXHOST))
     #else
-        var hostname = [CChar](count: Int(NI_MAXHOST), repeatedValue: 0x0)
+        var hostname = [CChar](repeating: 0x0, count: Int(NI_MAXHOST))
     #endif
         
         guard gethostname(&hostname, Int(NI_MAXHOST)) == noErr else {
             return nil
         }
 
-        return String(cString: hostname, encoding: NSUTF8StringEncoding)
+        return String(cString: hostname, encoding: String.Encoding.utf8)
     }
     
-    private func getAddresses() -> [String] {
+    fileprivate func getAddresses() -> [String] {
         
         var addresses: [String] = []
         var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
@@ -139,10 +139,10 @@ final public class Hostess {
         #if swift(>=3.0)
             let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
         #else
-            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, sockaddr_in.self)
+            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, to: sockaddr_in.self)
         #endif
             
-            if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: NSUTF8StringEncoding) where Int(addressInfo.sin_family) == Int(AF_INET) {
+            if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: String.Encoding.utf8), Int(addressInfo.sin_family) == Int(AF_INET) {
                 addresses.append(ipAddress)
             }
             
