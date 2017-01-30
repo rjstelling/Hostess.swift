@@ -36,9 +36,11 @@ import SystemConfiguration.CaptiveNetwork //SSID
 final public class Hostess {
     
     /// Connected SSID if available
+    #if os(iOS)
     public var ssid: String? {
         return getSSID()
     }
+    #endif
     
     /// Host name if available
     public var name: String? {
@@ -52,6 +54,7 @@ final public class Hostess {
     
     public init() {}
     
+    #if os(iOS)
     fileprivate func getSSID() -> String? {
 
         guard let interfaces = CNCopySupportedInterfaces() as? [String] else {
@@ -68,14 +71,11 @@ final public class Hostess {
         
         return nil
     }
+    #endif
     
     fileprivate func getHostname() -> String? {
         
-    #if swift(>=3.0)
-        var hostname = [CChar](repeating: 0x0 ,count: Int(NI_MAXHOST))
-    #else
         var hostname = [CChar](repeating: 0x0, count: Int(NI_MAXHOST))
-    #endif
         
         guard gethostname(&hostname, Int(NI_MAXHOST)) == noErr else {
             return nil
@@ -119,7 +119,7 @@ final public class Hostess {
                 #if swift(>=3.0)
                     currentInterface = currentInterface.ifa_next.pointee
                 #else
-                    currentInterface = currentInterface.ifa_next.memory
+                    currentInterface = currentInterface.ifa_next.pointee
                 #endif
             }
             else {

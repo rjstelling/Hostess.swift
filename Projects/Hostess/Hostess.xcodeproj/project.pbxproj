@@ -12,6 +12,7 @@
 		E89ADB621E3B68FA00640A0C /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E89ADB691E3B6A6100640A0C /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E89ADB6A1E3B6B7D00640A0C /* HostessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB641E3B694200640A0C /* HostessTests.swift */; };
+		E8B89E771E3C179000C61EE6 /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,6 @@
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
-		2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-mac.modulemap"; path = "Maps/custom-mac.modulemap"; sourceTree = "<group>"; };
 		2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-phoneos.modulemap"; path = "Maps/custom-phoneos.modulemap"; sourceTree = "<group>"; };
 		2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-simulator.modulemap"; path = "Maps/custom-simulator.modulemap"; sourceTree = "<group>"; };
 		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hostess.h; path = Hostess/Hostess.h; sourceTree = SOURCE_ROOT; };
@@ -38,6 +38,7 @@
 		E89ADB641E3B694200640A0C /* HostessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostessTests.swift; path = HostessTests/HostessTests.swift; sourceTree = SOURCE_ROOT; };
 		E89ADB651E3B694200640A0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HostessTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		E89ADB681E3B6A0600640A0C /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Hostess macOS/Info-macOS.plist"; sourceTree = SOURCE_ROOT; };
+		E8B89E741E3C154400C61EE6 /* custom-macosx-debug.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-macosx-debug.modulemap"; path = "Maps/custom-macosx-debug.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +114,7 @@
 				2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */,
 				2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */,
 				2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */,
-				2AE806BA1CFDF26700FDDB2F /* custom-mac.modulemap */,
+				E8B89E741E3C154400C61EE6 /* custom-macosx-debug.modulemap */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -206,6 +207,7 @@
 				TargetAttributes = {
 					2AB7ACCF1D5352EF00A5F64A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					2AE806651CFDDE3200FDDB2F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -265,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B89E771E3C179000C61EE6 /* Hostess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +310,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
-				INFOPLIST_FILE = "Host macOS/Info-macOS.plist";
+				INFOPLIST_FILE = "Hostess macOS/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -315,6 +318,7 @@
 				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -330,7 +334,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
-				INFOPLIST_FILE = "Host macOS/Info-macOS.plist";
+				INFOPLIST_FILE = "Hostess macOS/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -338,6 +342,7 @@
 				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -601,7 +606,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
-				INFOPLIST_FILE = "Host macOS/Info-macOS.plist";
+				INFOPLIST_FILE = "Hostess macOS/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -609,6 +614,7 @@
 				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = DebugBeta;
 		};
