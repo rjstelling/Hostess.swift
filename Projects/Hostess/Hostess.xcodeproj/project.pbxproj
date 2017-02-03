@@ -30,15 +30,18 @@
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
-		2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-phoneos.modulemap"; path = "Maps/custom-phoneos.modulemap"; sourceTree = "<group>"; };
-		2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-simulator.modulemap"; path = "Maps/custom-simulator.modulemap"; sourceTree = "<group>"; };
+		E891CC521E450E340068809B /* custom-iphoneos-debug.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-iphoneos-debug.modulemap"; path = "Maps/custom-iphoneos-debug.modulemap"; sourceTree = "<group>"; };
+		E891CC531E450E340068809B /* custom-iphoneos-debugbeta.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-iphoneos-debugbeta.modulemap"; path = "Maps/custom-iphoneos-debugbeta.modulemap"; sourceTree = "<group>"; };
+		E891CC541E450E480068809B /* custom-iphonesimulator-debug.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-iphonesimulator-debug.modulemap"; path = "Maps/custom-iphonesimulator-debug.modulemap"; sourceTree = "<group>"; };
+		E891CC551E450E480068809B /* custom-iphonesimulator-debugbeta.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-iphonesimulator-debugbeta.modulemap"; path = "Maps/custom-iphonesimulator-debugbeta.modulemap"; sourceTree = "<group>"; };
+		E891CC561E450E720068809B /* custom-macosx-debug.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-macosx-debug.modulemap"; path = "Maps/custom-macosx-debug.modulemap"; sourceTree = "<group>"; };
+		E891CC571E450E720068809B /* custom-macosx-debugbeta.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-macosx-debugbeta.modulemap"; path = "Maps/custom-macosx-debugbeta.modulemap"; sourceTree = "<group>"; };
 		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hostess.h; path = Hostess/Hostess.h; sourceTree = SOURCE_ROOT; };
 		E89ADB5F1E3B68FA00640A0C /* Hostess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hostess.swift; path = Hostess/Hostess.swift; sourceTree = SOURCE_ROOT; };
 		E89ADB601E3B68FA00640A0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Hostess/Info.plist; sourceTree = SOURCE_ROOT; };
 		E89ADB641E3B694200640A0C /* HostessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostessTests.swift; path = HostessTests/HostessTests.swift; sourceTree = SOURCE_ROOT; };
 		E89ADB651E3B694200640A0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HostessTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		E89ADB681E3B6A0600640A0C /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Hostess macOS/Info-macOS.plist"; sourceTree = SOURCE_ROOT; };
-		E8B89E741E3C154400C61EE6 /* custom-macosx-debug.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-macosx-debug.modulemap"; path = "Maps/custom-macosx-debug.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */,
-				2AE806BB1CFDF26700FDDB2F /* custom-phoneos.modulemap */,
-				2AE806BC1CFDF26700FDDB2F /* custom-simulator.modulemap */,
-				E8B89E741E3C154400C61EE6 /* custom-macosx-debug.modulemap */,
+				E891CC521E450E340068809B /* custom-iphoneos-debug.modulemap */,
+				E891CC531E450E340068809B /* custom-iphoneos-debugbeta.modulemap */,
+				E891CC541E450E480068809B /* custom-iphonesimulator-debug.modulemap */,
+				E891CC551E450E480068809B /* custom-iphonesimulator-debugbeta.modulemap */,
+				E891CC561E450E720068809B /* custom-macosx-debug.modulemap */,
+				E891CC571E450E720068809B /* custom-macosx-debugbeta.modulemap */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -456,7 +462,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Hostess\"";
 				INFOPLIST_FILE = Hostess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -480,7 +486,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Hostess\"";
 				INFOPLIST_FILE = Hostess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -580,7 +586,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Host\"";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Hostess\"";
 				INFOPLIST_FILE = Hostess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
