@@ -97,11 +97,7 @@ final public class Hostess {
         }
         
         // Our first address was returned above
-        #if swift(>=3.0)
-            var currentInterface: ifaddrs! = interfaces?.pointee
-        #else
-            var currentInterface: ifaddrs! = interfaces.memory
-        #endif
+        var currentInterface: ifaddrs! = interfaces?.pointee
         
         repeat {
             
@@ -116,11 +112,7 @@ final public class Hostess {
             }
             
             if currentInterface.ifa_next != nil {
-                #if swift(>=3.0)
-                    currentInterface = currentInterface.ifa_next.pointee
-                #else
-                    currentInterface = currentInterface.ifa_next.pointee
-                #endif
+                currentInterface = currentInterface.ifa_next.pointee
             }
             else {
                 currentInterface = nil
