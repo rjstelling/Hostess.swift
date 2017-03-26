@@ -34,6 +34,20 @@ import SystemConfiguration.CaptiveNetwork //SSID
 // TODO:    - IPv6 Support
 //          - WAN Address
 
+extension sockaddr {
+    
+    var family: Int32 {
+        return Int32(self.sa_family)
+    }
+    
+}
+
+extension sockaddr_in {
+    
+    var family: Int32 {
+        return Int32(self.sin_family)
+    }
+}
 
 @available(iOS 9.3, OSX 10.11, *)
 final public class Hostess {
