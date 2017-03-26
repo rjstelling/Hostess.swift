@@ -26,7 +26,10 @@
 //  SOFTWARE.
 
 import Foundation
+
+#if os(iOS) || os(tvOS)
 import SystemConfiguration.CaptiveNetwork //SSID
+#endif
 
 // TODO:    - IPv6 Support
 //          - WAN Address
@@ -36,7 +39,7 @@ import SystemConfiguration.CaptiveNetwork //SSID
 final public class Hostess {
     
     /// Connected SSID if available
-    #if os(iOS)
+    #if os(iOS) || os(tvOS)
     public var ssid: String? {
         return getSSID()
     }
@@ -49,12 +52,17 @@ final public class Hostess {
     
     /// Unordered list of IPv4 addresses
     public var addresses: [String] {
+        return getAddresses().flatMap { $0.family == .ipv4 ? $0.address : nil }
+    }
+    
+    ///Unordered list of Interfaces
+    public var interfaces: [Interface] {
         return getAddresses()
     }
     
     public init() {}
     
-    #if os(iOS)
+    #if os(iOS) || os(tvOS)
     fileprivate func getSSID() -> String? {
 
         guard let interfaces = CNCopySupportedInterfaces() as? [String] else {
