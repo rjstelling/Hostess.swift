@@ -34,6 +34,64 @@ import SystemConfiguration.CaptiveNetwork //SSID
 // TODO:    - IPv6 Support
 //          - WAN Address
 
+let INET6_ADDRSTRLEN = UInt32(46)
+
+extension ifaddrs {
+    
+    public enum Name: String {
+        
+        //iOS
+        case localhost = "lo0"
+        
+        case ethernet = "en0"
+        case ethernet1 = "en1"
+        case ethernet2 = "en2"
+        case ethernet3 = "en3"
+        case ethernet4 = "en4"
+        case ethernet5 = "en5"
+        case ethernet6 = "en6"
+        
+        case celluar3G = "pdp_ip0"
+        case tether = "pdp_ip1"
+        case vpn = "ppp0"
+        case appleWirelessDirectLink = "awdl0"
+        case accessPoint = "ap1"
+        case tunnel0 = "utun0"
+        case tunnel1 = "utun1"
+        case tunnel2 = "utun2"
+        case bridge100 = "bridge100"
+        
+        public func description() -> String? {
+            
+            switch self {
+            case .localhost: return "Local"
+            case .ethernet: fallthrough
+            case .ethernet1: fallthrough
+            case .ethernet2: fallthrough
+            case .ethernet3: fallthrough
+            case .ethernet4: fallthrough
+            case .ethernet5: fallthrough
+            case .ethernet6:
+                return "LAN"
+            case .celluar3G: return "3G"
+            case .vpn: return "VPN"
+            case .appleWirelessDirectLink: return "WL"
+            case .accessPoint: return "AP"
+            case .tunnel0: return "TN0"
+            case .tunnel1: return "TN1"
+            case .tunnel2: return "TN2"
+            case .bridge100: return "BRD"
+            case .tether: return "THR"
+            //default: return nil
+            }
+        }
+    }
+    
+    var family: Int32 {
+        return self.ifa_addr.pointee.family
+    }
+}
+
 extension sockaddr {
     
     var family: Int32 {
