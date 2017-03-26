@@ -107,8 +107,29 @@ final public class Hostess {
             let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, to: sockaddr_in.self)
         #endif
             
-            if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: String.Encoding.utf8), Int(addressInfo.sin_family) == Int(AF_INET) {
-                addresses.append(ipAddress)
+            case AF_INET6: //30
+                
+                let addressInfo: String = currentInterface.ifa_addr.withMemoryRebound(to: sockaddr_in6.self, capacity: 1) { sock in
+                    
+                    let sz = MemoryLayout<in6_addr>.size
+                    let alg = MemoryLayout<in6_addr>.alignment
+                    
+                    let bytesPointer = UnsafeMutableRawPointer.allocate(bytes: sz, alignedTo: alg)
+                    bytesPointer.storeBytes(of: sock.pointee.sin6_addr, as: in6_addr.self)
+
+                    
+                    let chars: UnsafeMutablePointer<Int8>? = UnsafeMutablePointer<Int8>.allocate(capacity: Int(INET6_ADDRSTRLEN))
+                    
+                    let cStr = inet_ntop(AF_INET6, bytesPointer, chars, INET6_ADDRSTRLEN)
+                    let ipv6Str = String(cString: cStr!, encoding: String.Encoding.utf8)
+                    return "\(ipv6Str!)"
+                }
+                
+                addresses.append(Interface(family: .ipv6, address: addressInfo, name: ifaddrs.Name(rawValue: interfaceName)))
+                
+                //print("\(addressInfo)")
+                break
+                
             }
             
             if currentInterface.ifa_next != nil {
