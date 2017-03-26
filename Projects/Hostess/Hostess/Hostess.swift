@@ -128,6 +128,15 @@ final public class Hostess {
         #else
             let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, to: sockaddr_in.self)
         #endif
+            case AF_INET: //2
+                
+                let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
+                
+                if let ipAddress = String(cString: inet_ntoa(addressInfo.sin_addr), encoding: String.Encoding.utf8) {
+                    addresses.append(Interface(family: .ipv4, address: ipAddress, name: ifaddrs.Name(rawValue: interfaceName)))
+                }
+                //print("\(addressInfo)")
+                break
             
             case AF_INET6: //30
                 
