@@ -110,6 +110,22 @@ extension sockaddr_in {
 @available(iOS 9.3, OSX 10.11, *)
 final public class Hostess {
     
+    public struct Interface {
+        
+       public enum Family {
+            case ipv4
+            case ipv6
+            case link
+        }
+        
+        public let family: Family
+        
+        public let address: String
+        //let ipv6Address: String
+        
+        public let name: ifaddrs.Name? //nil if unknown
+    }
+    
     /// Connected SSID if available
     #if os(iOS) || os(tvOS)
     public var ssid: String? {
@@ -130,6 +146,10 @@ final public class Hostess {
     ///Unordered list of Interfaces
     public var interfaces: [Interface] {
         return getAddresses()
+    }
+    
+    public func interface(named name: ifaddrs.Name) -> [Interface] {
+        return self.interfaces.filter { $0.name == name }
     }
     
     public init() {}
@@ -164,9 +184,9 @@ final public class Hostess {
         return String(cString: hostname, encoding: String.Encoding.utf8)
     }
     
-    fileprivate func getAddresses() -> [String] {
+    fileprivate func getAddresses() -> [Interface] {
         
-        var addresses: [String] = []
+        var addresses: [Interface] = []
         //var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
         // How many interface will we get? Will it crash if not enough?
         var interfaces: UnsafeMutablePointer<ifaddrs>? = UnsafeMutablePointer<ifaddrs>.allocate(capacity: 32)
@@ -174,6 +194,10 @@ final public class Hostess {
         // Use `getifaddrs()` to fill the ifaddrs struct, this is a linked list
         guard getifaddrs(&interfaces) == 0 else {
             return []
+        }
+        
+        defer {
+            freeifaddrs(interfaces)
         }
         
         // Our first address was returned above
