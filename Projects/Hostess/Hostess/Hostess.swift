@@ -152,6 +152,23 @@ final public class Hostess {
                 //print("\(addressInfo)")
                 break
                 
+            case AF_LINK: //18
+                
+            
+                //let addrInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr.self)
+                //let dl = unsafeBitCast(addrInfo.sa_data, to: sockaddr_dl.self)
+                //let addrInfo2 = unsafeBitCast(currentInterface.ifa_addr.sa_data, to: sockaddr_dl.self)
+                //print("LINK... \(interfaceName) -> \(dl)")
+                //let dl = UnsafeBufferPointer(start: currentInterface.ifa_addr.pointee, count: 1)
+                //let addressInfo = unsafeBitCast(currentInterface.ifa_data, to: sockaddr_dl.self)
+                
+                //link = (struct sockaddr_dl*)a->addr->sa_data;
+                
+                break
+                
+            default:
+                //print("\(interfaceName) Family: \(addressInfo.family)")
+                break
             }
             
             if currentInterface.ifa_next != nil {
