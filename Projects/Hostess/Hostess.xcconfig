@@ -8,4 +8,11 @@
 
 MODULEMAP_FILE[sdk=iphoneos*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
 MODULEMAP_FILE[sdk=iphonesimulator*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
+
+MODULEMAP_FILE[sdk=watchsimulator*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
+MODULEMAP_FILE[sdk=watchos*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
+
+MODULEMAP_FILE[sdk=appletvsimulator*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
+MODULEMAP_FILE[sdk=appletvos*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
+
 MODULEMAP_FILE[sdk=macosx*] = $(PROJECT_DIR)/Maps/custom-$(PLATFORM_NAME)-$(CONFIGURATION:lower).modulemap
