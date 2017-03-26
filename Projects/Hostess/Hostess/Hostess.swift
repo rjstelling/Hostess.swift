@@ -181,11 +181,17 @@ final public class Hostess {
         
         repeat {
             
-        #if swift(>=3.0)
-            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
-        #else
-            let addressInfo = unsafeBitCast(currentInterface.ifa_addr.memory, to: sockaddr_in.self)
-        #endif
+            let interfaceName = String(cString: currentInterface.ifa_name, encoding: String.Encoding.utf8) ?? ""
+            //let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
+            
+            
+            //var fam = currentInterface.ifa_addr.pointee.sa_family
+            //let testSock = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in6.self)
+            
+            print("Interface: \(interfaceName) :: \(currentInterface.family)")
+            
+            switch currentInterface.family {
+                
             case AF_INET: //2
                 
                 let addressInfo = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in.self)
