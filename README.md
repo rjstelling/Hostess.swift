@@ -1,7 +1,7 @@
 [![Hostess.swift](https://github.com/rjstelling/Hostess.swift/blob/master/Resources/Hero.png)](#)
 
 [![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](#)
-[![Platform](https://img.shields.io/badge/Platform-iOS, macOS & tvOS-lightgrey.svg?style=flat)](#)
+[![Platform](https://img.shields.io/badge/Platform-iOS,%20macOS%20&amp;%20tvOS-lightgrey.svg?style=flat)](#)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/rjstelling/Hostess.swift/blob/master/LICENSE)
 
