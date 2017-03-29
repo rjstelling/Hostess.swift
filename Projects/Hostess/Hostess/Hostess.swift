@@ -31,9 +31,6 @@ import Foundation
 import SystemConfiguration.CaptiveNetwork //SSID
 #endif
 
-// TODO:    - IPv6 Support
-//          - WAN Address
-
 let INET6_ADDRSTRLEN = UInt32(46)
 
 extension ifaddrs {
@@ -217,7 +214,7 @@ final public class Hostess {
             //var fam = currentInterface.ifa_addr.pointee.sa_family
             //let testSock = unsafeBitCast(currentInterface.ifa_addr.pointee, to: sockaddr_in6.self)
             
-            print("Interface: \(interfaceName) :: \(currentInterface.family)")
+            //print("Interface: \(interfaceName) :: \(currentInterface.family)")
             
             switch currentInterface.family {
                 

@@ -11,7 +11,6 @@ import Hostess
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ssid: NSTextField!
     @IBOutlet weak var hostname: UILabel!
     @IBOutlet weak var addresses: UILabel!
     @IBOutlet weak var ssid: UILabel!
@@ -22,8 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         hostname.text = hostess.name
-        @IBOutlet weak var addresses: NSTextField!
-        @IBOutlet weak var addresses: NSTextField!
         addresses.text = hostess.addresses.reduce("") {
             return "\($0!)\($1)\n"
         }
