@@ -107,6 +107,11 @@ extension sockaddr_in {
     }
 }
 
+extension Hostess {
+    
+    static let hostessVersionNumber: Double = HostessVersionNumber
+}
+
 @available(iOS 9.3, OSX 10.11, *)
 final public class Hostess {
     
