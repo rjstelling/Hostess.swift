@@ -20,20 +20,6 @@
                ReferencedContainer = "container:Hostess.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2AE8066F1CFDDE3200FDDB2F"
-               BuildableName = "HostessTests.xctest"
-               BlueprintName = "HostessTests"
-               ReferencedContainer = "container:Hostess.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
