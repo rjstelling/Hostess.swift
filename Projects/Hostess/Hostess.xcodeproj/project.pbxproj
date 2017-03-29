@@ -45,10 +45,10 @@
 		E8B8D7871E8C6B80006C5A62 /* custom-hostess-iphoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-iphoneos.modulemap"; path = "Maps/custom-hostess-iphoneos.modulemap"; sourceTree = "<group>"; };
 		E8B8D7881E8C6B80006C5A62 /* custom-hostess-appletvsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-appletvsimulator.modulemap"; path = "Maps/custom-hostess-appletvsimulator.modulemap"; sourceTree = "<group>"; };
 		E8B8D7891E8C6B80006C5A62 /* custom-hostess-appletvos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-appletvos.modulemap"; path = "Maps/custom-hostess-appletvos.modulemap"; sourceTree = "<group>"; };
-		E8B8D78A1E8C6D98006C5A62 /* Info-appletvos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-appletvos.plist"; path = "Hostess/Info-appletvos.plist"; sourceTree = "<group>"; };
-		E8B8D78B1E8C6D98006C5A62 /* Info-macosx.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macosx.plist"; path = "Hostess/Info-macosx.plist"; sourceTree = "<group>"; };
-		E8B8D78C1E8C6D98006C5A62 /* Info-phoneos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-phoneos.plist"; path = "Hostess/Info-phoneos.plist"; sourceTree = "<group>"; };
-		E8B8D78D1E8C6D98006C5A62 /* Info-watchos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-watchos.plist"; path = "Hostess/Info-watchos.plist"; sourceTree = "<group>"; };
+		E8B8D78E1E8C701A006C5A62 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Hostess/Info-iOS.plist"; sourceTree = "<group>"; };
+		E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Hostess/Info-macOS.plist"; sourceTree = "<group>"; };
+		E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Hostess/Info-tvOS.plist"; sourceTree = "<group>"; };
+		E8B8D7911E8C701A006C5A62 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Hostess/Info-watchOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +135,10 @@
 		2AE806841CFDE04200FDDB2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8B8D78A1E8C6D98006C5A62 /* Info-appletvos.plist */,
-				E8B8D78B1E8C6D98006C5A62 /* Info-macosx.plist */,
-				E8B8D78C1E8C6D98006C5A62 /* Info-phoneos.plist */,
-				E8B8D78D1E8C6D98006C5A62 /* Info-watchos.plist */,
+				E8B8D78E1E8C701A006C5A62 /* Info-iOS.plist */,
+				E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */,
+				E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */,
+				E8B8D7911E8C701A006C5A62 /* Info-watchOS.plist */,
 				2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */,
 				E8B8D7831E8C6B80006C5A62 /* custom-hostess-watchsimulator.modulemap */,
 				E8B8D7841E8C6B80006C5A62 /* custom-hostess-watchos.modulemap */,
