@@ -6,5 +6,6 @@
 //  Copyright © 2016 Richard Stelling. All rights reserved.
 //
 
-MODULEMAP_FILE[sdk=*] = $(PROJECT_DIR)/Maps/custom-hostess-$(PLATFORM_NAME:lower).modulemap
+MODULEMAP_FILE[sdk=*] = $(PROJECT_DIR)/Maps/custom-hostess-proxy.modulemap
+//MODULEMAP_FILE[sdk=*] = $(PROJECT_DIR)/Maps/custom-hostess-$(PLATFORM_NAME:lower).modulemap
 

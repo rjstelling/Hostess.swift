@@ -6,8 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E851308B1E8EBD13005BEBE9 /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E851308C1E8EBD13005BEBE9 /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E85130901E8EBD25005BEBE9 /* PBXTargetDependency */,
+				E85130921E8EBD25005BEBE9 /* PBXTargetDependency */,
+				E85130941E8EBD25005BEBE9 /* PBXTargetDependency */,
+				E85130961E8EBD25005BEBE9 /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2AE806711CFDDE3200FDDB2F /* Hostess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE806661CFDDE3200FDDB2F /* Hostess.framework */; };
+		E85130871E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E85130881E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E85130891E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E851308A1E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E878BC5A1E7620B400F4C97E /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E89ADB611E3B68FA00640A0C /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E89ADB621E3B68FA00640A0C /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
@@ -27,6 +48,34 @@
 			remoteGlobalIDString = 2AE806651CFDDE3200FDDB2F;
 			remoteInfo = Host;
 		};
+		E851308F1E8EBD25005BEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE806651CFDDE3200FDDB2F;
+			remoteInfo = "Hostess iOS";
+		};
+		E85130911E8EBD25005BEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E878BC4F1E76200D00F4C97E;
+			remoteInfo = "Hostess watchOS";
+		};
+		E85130931E8EBD25005BEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AB7ACCF1D5352EF00A5F64A;
+			remoteInfo = "Hostess macOS";
+		};
+		E85130951E8EBD25005BEBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A36E891E7B41A100C3A3B1;
+			remoteInfo = "Hostess tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +83,8 @@
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
+		E85130811E8EB6E6005BEBE9 /* custom-hostess-proxy.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-proxy.modulemap"; path = "Maps/custom-hostess-proxy.modulemap"; sourceTree = "<group>"; };
+		E85130861E8EBC88005BEBE9 /* ifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ifaddrs.h; path = Hostess/ProxyHeaders/ifaddrs.h; sourceTree = "<group>"; };
 		E878BC501E76200D00F4C97E /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hostess.h; path = Hostess/Hostess.h; sourceTree = SOURCE_ROOT; };
 		E89ADB5F1E3B68FA00640A0C /* Hostess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hostess.swift; path = Hostess/Hostess.swift; sourceTree = SOURCE_ROOT; };
@@ -149,6 +200,8 @@
 				E8B8D7871E8C6B80006C5A62 /* custom-hostess-iphoneos.modulemap */,
 				E8B8D7881E8C6B80006C5A62 /* custom-hostess-appletvsimulator.modulemap */,
 				E8B8D7891E8C6B80006C5A62 /* custom-hostess-appletvos.modulemap */,
+				E85130811E8EB6E6005BEBE9 /* custom-hostess-proxy.modulemap */,
+				E85130861E8EBC88005BEBE9 /* ifaddrs.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,6 +213,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85130891E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E89ADB691E3B6A6100640A0C /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +222,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85130871E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E89ADB611E3B68FA00640A0C /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +231,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85130881E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E8B8D7931E8C78AB006C5A62 /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +240,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E851308A1E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E8B8D7941E8C78AD006C5A62 /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +273,6 @@
 				2AE806611CFDDE3200FDDB2F /* Sources */,
 				2AE806621CFDDE3200FDDB2F /* Frameworks */,
 				2AE806631CFDDE3200FDDB2F /* Headers */,
-				2AE806641CFDDE3200FDDB2F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -304,6 +360,11 @@
 						DevelopmentTeam = 67BU7Q9MHN;
 						LastSwiftMigration = 0830;
 					};
+					E851308B1E8EBD13005BEBE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 67BU7Q9MHN;
+						ProvisioningStyle = Automatic;
+					};
 					E878BC4F1E76200D00F4C97E = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Manual;
@@ -326,6 +387,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E851308B1E8EBD13005BEBE9 /* Build All */,
 				2AE806651CFDDE3200FDDB2F /* Hostess iOS */,
 				E878BC4F1E76200D00F4C97E /* Hostess watchOS */,
 				2AB7ACCF1D5352EF00A5F64A /* Hostess macOS */,
@@ -337,13 +399,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		2AB7ACCE1D5352EF00A5F64A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AE806641CFDDE3200FDDB2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,6 +476,26 @@
 			isa = PBXTargetDependency;
 			target = 2AE806651CFDDE3200FDDB2F /* Hostess iOS */;
 			targetProxy = 2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */;
+		};
+		E85130901E8EBD25005BEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE806651CFDDE3200FDDB2F /* Hostess iOS */;
+			targetProxy = E851308F1E8EBD25005BEBE9 /* PBXContainerItemProxy */;
+		};
+		E85130921E8EBD25005BEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E878BC4F1E76200D00F4C97E /* Hostess watchOS */;
+			targetProxy = E85130911E8EBD25005BEBE9 /* PBXContainerItemProxy */;
+		};
+		E85130941E8EBD25005BEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AB7ACCF1D5352EF00A5F64A /* Hostess macOS */;
+			targetProxy = E85130931E8EBD25005BEBE9 /* PBXContainerItemProxy */;
+		};
+		E85130961E8EBD25005BEBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8A36E891E7B41A100C3A3B1 /* Hostess tvOS */;
+			targetProxy = E85130951E8EBD25005BEBE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,6 +723,22 @@
 			};
 			name = Release;
 		};
+		E851308D1E8EBD13005BEBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67BU7Q9MHN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E851308E1E8EBD13005BEBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67BU7Q9MHN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E878BC561E76200D00F4C97E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
@@ -794,6 +885,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E851308C1E8EBD13005BEBE9 /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E851308D1E8EBD13005BEBE9 /* Debug */,
+				E851308E1E8EBD13005BEBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		E878BC551E76200D00F4C97E /* Build configuration list for PBXNativeTarget "Hostess watchOS" */ = {
 			isa = XCConfigurationList;
