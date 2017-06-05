@@ -7,6 +7,7 @@ framework module Hostess {
     module * { export * }
 }
 
-module Hostess.Networking {
-    header "ifaddrs.h"
-}
+//module Hostess.Networking {
+//    header "ifaddrs.h"
+//}
+
