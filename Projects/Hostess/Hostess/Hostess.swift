@@ -191,7 +191,7 @@ final public class Hostess {
         var addresses: [Interface] = []
         //var interfaces = UnsafeMutablePointer<ifaddrs>(nil)
         // How many interface will we get? Will it crash if not enough?
-        var interfaces: UnsafeMutablePointer<ifaddrs>? = UnsafeMutablePointer<ifaddrs>.allocate(capacity: 32)
+        var interfaces: UnsafeMutablePointer<ifaddrs>? = nil
         
         // Use `getifaddrs()` to fill the ifaddrs struct, this is a linked list
         guard getifaddrs(&interfaces) == 0 else {
@@ -243,6 +243,9 @@ final public class Hostess {
                     
                     let cStr = inet_ntop(AF_INET6, bytesPointer, chars, INET6_ADDRSTRLEN)
                     let ipv6Str = String(cString: cStr!, encoding: String.Encoding.utf8)
+					
+					bytesPointer.deallocate(bytes: sz, alignedTo: alg)
+					chars?.deallocate(capacity: Int(INET6_ADDRSTRLEN))
                     return "\(ipv6Str!)"
                 }
                 
