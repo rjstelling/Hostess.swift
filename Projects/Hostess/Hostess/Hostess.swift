@@ -57,6 +57,7 @@ extension ifaddrs {
         case tunnel1 = "utun1"
         case tunnel2 = "utun2"
         case bridge100 = "bridge100"
+        case ipsec0 = "ipsec0" // WiFi Calling
         
         public func description() -> String? {
             
@@ -79,6 +80,7 @@ extension ifaddrs {
             case .tunnel2: return "TN2"
             case .bridge100: return "BRD"
             case .tether: return "THR"
+            case .ipsec0: return "IPSEC"
             //default: return nil
             }
         }
