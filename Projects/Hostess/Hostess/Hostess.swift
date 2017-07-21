@@ -50,6 +50,11 @@ extension ifaddrs {
         
         case celluar3G = "pdp_ip0"
         case tether = "pdp_ip1"
+        
+        case pdpip2 = "pdp_ip2"
+        case pdpip3 = "pdp_ip3"
+        case pdpip4 = "pdp_ip4"
+        
         case vpn = "ppp0"
         case appleWirelessDirectLink = "awdl0"
         case accessPoint = "ap1"
@@ -58,6 +63,7 @@ extension ifaddrs {
         case tunnel2 = "utun2"
         case bridge100 = "bridge100"
         case ipsec0 = "ipsec0" // WiFi Calling
+        case ipsec1 = "ipsec1" // WiFi Calling
         
         public func description() -> String? {
             
@@ -80,7 +86,14 @@ extension ifaddrs {
             case .tunnel2: return "TN2"
             case .bridge100: return "BRD"
             case .tether: return "THR"
-            case .ipsec0: return "IPSEC"
+            case .ipsec0: fallthrough
+            case .ipsec1: return "IPSEC"
+                
+                //Wifi calling????
+            case .pdpip2: fallthrough
+            case .pdpip3: fallthrough
+            case .pdpip4: return "PDP"
+                
             //default: return nil
             }
         }
