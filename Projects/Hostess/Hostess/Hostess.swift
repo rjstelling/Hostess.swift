@@ -64,6 +64,7 @@ extension ifaddrs {
         case bridge100 = "bridge100"
         case ipsec0 = "ipsec0" // WiFi Calling
         case ipsec1 = "ipsec1" // WiFi Calling
+        case ipsec2 = "ipsec2" // WiFi Calling
         
         public func description() -> String? {
             
@@ -87,7 +88,8 @@ extension ifaddrs {
             case .bridge100: return "BRD"
             case .tether: return "THR"
             case .ipsec0: fallthrough
-            case .ipsec1: return "IPSEC"
+            case .ipsec1: fallthrough
+            case .ipsec2: return "IPSEC"
                 
                 //Wifi calling????
             case .pdpip2: fallthrough
