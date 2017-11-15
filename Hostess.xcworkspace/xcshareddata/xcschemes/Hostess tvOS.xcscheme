@@ -17,7 +17,7 @@
                BlueprintIdentifier = "E8A36E891E7B41A100C3A3B1"
                BuildableName = "Hostess.framework"
                BlueprintName = "Hostess tvOS"
-               ReferencedContainer = "container:Hostess.xcodeproj">
+               ReferencedContainer = "container:Projects/Hostess/Hostess.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -48,7 +50,7 @@
             BlueprintIdentifier = "E8A36E891E7B41A100C3A3B1"
             BuildableName = "Hostess.framework"
             BlueprintName = "Hostess tvOS"
-            ReferencedContainer = "container:Hostess.xcodeproj">
+            ReferencedContainer = "container:Projects/Hostess/Hostess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +68,7 @@
             BlueprintIdentifier = "E8A36E891E7B41A100C3A3B1"
             BuildableName = "Hostess.framework"
             BlueprintName = "Hostess tvOS"
-            ReferencedContainer = "container:Hostess.xcodeproj">
+            ReferencedContainer = "container:Projects/Hostess/Hostess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
