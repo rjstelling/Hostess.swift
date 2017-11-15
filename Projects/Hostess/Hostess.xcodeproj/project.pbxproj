@@ -25,10 +25,6 @@
 
 /* Begin PBXBuildFile section */
 		2AE806711CFDDE3200FDDB2F /* Hostess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE806661CFDDE3200FDDB2F /* Hostess.framework */; };
-		E85130871E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E85130881E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E85130891E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E851308A1E8EBC88005BEBE9 /* ifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = E85130861E8EBC88005BEBE9 /* ifaddrs.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E878BC5A1E7620B400F4C97E /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E89ADB611E3B68FA00640A0C /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E89ADB621E3B68FA00640A0C /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
@@ -82,22 +78,12 @@
 		2AB7ACD01D5352EF00A5F64A /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Hostess.xcconfig; sourceTree = "<group>"; };
-		E85130811E8EB6E6005BEBE9 /* custom-hostess-proxy.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-proxy.modulemap"; path = "Maps/custom-hostess-proxy.modulemap"; sourceTree = "<group>"; };
-		E85130861E8EBC88005BEBE9 /* ifaddrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ifaddrs.h; path = Hostess/ProxyHeaders/ifaddrs.h; sourceTree = "<group>"; };
 		E878BC501E76200D00F4C97E /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hostess.h; path = Hostess/Hostess.h; sourceTree = SOURCE_ROOT; };
 		E89ADB5F1E3B68FA00640A0C /* Hostess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hostess.swift; path = Hostess/Hostess.swift; sourceTree = SOURCE_ROOT; };
 		E89ADB641E3B694200640A0C /* HostessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostessTests.swift; path = HostessTests/HostessTests.swift; sourceTree = SOURCE_ROOT; };
 		E89ADB651E3B694200640A0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HostessTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		E8A36E8A1E7B41A100C3A3B1 /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8B8D7831E8C6B80006C5A62 /* custom-hostess-watchsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-watchsimulator.modulemap"; path = "Maps/custom-hostess-watchsimulator.modulemap"; sourceTree = "<group>"; };
-		E8B8D7841E8C6B80006C5A62 /* custom-hostess-watchos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-watchos.modulemap"; path = "Maps/custom-hostess-watchos.modulemap"; sourceTree = "<group>"; };
-		E8B8D7851E8C6B80006C5A62 /* custom-hostess-macosx.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-macosx.modulemap"; path = "Maps/custom-hostess-macosx.modulemap"; sourceTree = "<group>"; };
-		E8B8D7861E8C6B80006C5A62 /* custom-hostess-iphonesimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-iphonesimulator.modulemap"; path = "Maps/custom-hostess-iphonesimulator.modulemap"; sourceTree = "<group>"; };
-		E8B8D7871E8C6B80006C5A62 /* custom-hostess-iphoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-iphoneos.modulemap"; path = "Maps/custom-hostess-iphoneos.modulemap"; sourceTree = "<group>"; };
-		E8B8D7881E8C6B80006C5A62 /* custom-hostess-appletvsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-appletvsimulator.modulemap"; path = "Maps/custom-hostess-appletvsimulator.modulemap"; sourceTree = "<group>"; };
-		E8B8D7891E8C6B80006C5A62 /* custom-hostess-appletvos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "custom-hostess-appletvos.modulemap"; path = "Maps/custom-hostess-appletvos.modulemap"; sourceTree = "<group>"; };
 		E8B8D78E1E8C701A006C5A62 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Hostess/Info-iOS.plist"; sourceTree = "<group>"; };
 		E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Hostess/Info-macOS.plist"; sourceTree = "<group>"; };
 		E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Hostess/Info-tvOS.plist"; sourceTree = "<group>"; };
@@ -148,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE806681CFDDE3200FDDB2F /* Hostess */,
-				2AE806741CFDDE3200FDDB2F /* HostTests */,
+				2AE806741CFDDE3200FDDB2F /* HostessTests */,
 				2AE806841CFDE04200FDDB2F /* Supporting Files */,
 				2AE806671CFDDE3200FDDB2F /* Products */,
 			);
@@ -172,17 +158,16 @@
 				E89ADB5E1E3B68FA00640A0C /* Hostess.h */,
 				E89ADB5F1E3B68FA00640A0C /* Hostess.swift */,
 			);
-			name = Hostess;
-			path = Host;
+			path = Hostess;
 			sourceTree = "<group>";
 		};
-		2AE806741CFDDE3200FDDB2F /* HostTests */ = {
+		2AE806741CFDDE3200FDDB2F /* HostessTests */ = {
 			isa = PBXGroup;
 			children = (
 				E89ADB641E3B694200640A0C /* HostessTests.swift */,
 				E89ADB651E3B694200640A0C /* Info.plist */,
 			);
-			path = HostTests;
+			path = HostessTests;
 			sourceTree = "<group>";
 		};
 		2AE806841CFDE04200FDDB2F /* Supporting Files */ = {
@@ -192,16 +177,6 @@
 				E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */,
 				E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */,
 				E8B8D7911E8C701A006C5A62 /* Info-watchOS.plist */,
-				2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */,
-				E8B8D7831E8C6B80006C5A62 /* custom-hostess-watchsimulator.modulemap */,
-				E8B8D7841E8C6B80006C5A62 /* custom-hostess-watchos.modulemap */,
-				E8B8D7851E8C6B80006C5A62 /* custom-hostess-macosx.modulemap */,
-				E8B8D7861E8C6B80006C5A62 /* custom-hostess-iphonesimulator.modulemap */,
-				E8B8D7871E8C6B80006C5A62 /* custom-hostess-iphoneos.modulemap */,
-				E8B8D7881E8C6B80006C5A62 /* custom-hostess-appletvsimulator.modulemap */,
-				E8B8D7891E8C6B80006C5A62 /* custom-hostess-appletvos.modulemap */,
-				E85130811E8EB6E6005BEBE9 /* custom-hostess-proxy.modulemap */,
-				E85130861E8EBC88005BEBE9 /* ifaddrs.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,7 +188,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85130891E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E89ADB691E3B6A6100640A0C /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +196,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85130871E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E89ADB611E3B68FA00640A0C /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +204,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85130881E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E8B8D7931E8C78AB006C5A62 /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +212,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E851308A1E8EBC88005BEBE9 /* ifaddrs.h in Headers */,
 				E8B8D7941E8C78AD006C5A62 /* Hostess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +473,6 @@
 /* Begin XCBuildConfiguration section */
 		2AB7ACD51D5352EF00A5F64A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -525,7 +495,6 @@
 		};
 		2AB7ACD61D5352EF00A5F64A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -664,7 +633,6 @@
 		};
 		2AE8067B1CFDDE3200FDDB2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -688,7 +656,6 @@
 		};
 		2AE8067C1CFDDE3200FDDB2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -753,7 +720,6 @@
 		};
 		E878BC561E76200D00F4C97E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -781,7 +747,6 @@
 		};
 		E878BC581E76200D00F4C97E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -808,7 +773,6 @@
 		};
 		E8A36E8F1E7B41A100C3A3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -835,7 +799,6 @@
 		};
 		E8A36E911E7B41A100C3A3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AE806A71CFDE62700FDDB2F /* Hostess.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
