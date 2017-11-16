@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-iOS,%20macOS,%20tvOS%20&amp;%20watchOS-lightgrey.svg?style=flat)](#)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Hostess.svg)](https://cocoapods.org/pods/Hostess)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/rjstelling/Hostess.swift/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/rjstelling/Hostess.swift/blob/master/LICENSE)
 
 A Swift implementation of [NSHost (Host in Swift)](https://developer.apple.com/reference/foundation/host) that works on iOS, OS X and tvOS. 
 
