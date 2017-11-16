@@ -1,13 +1,32 @@
 [![Hostess.swift](https://github.com/rjstelling/Hostess.swift/blob/master/Resources/Hero.png)](#)
 
-[![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](#)
+[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](#)
 [![Platform](https://img.shields.io/badge/Platform-iOS,%20macOS,%20tvOS%20&amp;%20watchOS-lightgrey.svg?style=flat)](#)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Hostess.svg)](https://cocoapods.org/pods/Hostess)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/rjstelling/Hostess.swift/blob/master/LICENSE)
 
 A Swift implementation of [NSHost (Host in Swift)](https://developer.apple.com/reference/foundation/host) that works on iOS, OS X and tvOS. 
 
 Hostess.swift is safe to use in a framework because it does not require a bridging header.
+
+## Usage
+
+### Carthage 
+
+Adding Hostess to your Xcode project using Carthage is very straightforward:
+
+    github "rjstelling/Hostess" ~> 1.0
+
+Run `carthage` to download and build the framework.
+
+### Cocopods
+
+Installing Hostess using Cocoapods, add the following line to your Podfile:
+
+    pod 'Hostess', '~> 1.0'
+
+Then run the `pod install` command. 
 
 ## Motivation
 
