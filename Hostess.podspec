@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Hostess"
-  s.version      = "0.6.1"
-  s.summary      = "A Swift implementation of NSHost that works on iOS, OS X and tvOS. Hostess.swift is safe to use in a framework because it does not require a bridging header."
+  s.version      = "0.9.0"
+  s.summary      = "A Swift implementation of NSHost that builds for iOS, macOS and tvOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/rjstelling/Hostess.swift", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/rjstelling/Hostess.swift.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
