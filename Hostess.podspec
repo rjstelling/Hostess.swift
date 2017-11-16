@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Hostess"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "A Swift implementation of NSHost that builds for iOS, macOS and tvOS."
 
   # This description is used to generate tags and improve search results.
