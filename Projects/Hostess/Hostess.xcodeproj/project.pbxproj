@@ -24,12 +24,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2AE806711CFDDE3200FDDB2F /* Hostess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE806661CFDDE3200FDDB2F /* Hostess.framework */; };
 		E878BC5A1E7620B400F4C97E /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E89ADB611E3B68FA00640A0C /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E89ADB621E3B68FA00640A0C /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E89ADB691E3B6A6100640A0C /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E89ADB6A1E3B6B7D00640A0C /* HostessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB641E3B694200640A0C /* HostessTests.swift */; };
 		E8A36E941E7B42A800C3A3B1 /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E8B89E771E3C179000C61EE6 /* Hostess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ADB5F1E3B68FA00640A0C /* Hostess.swift */; };
 		E8B8D7931E8C78AB006C5A62 /* Hostess.h in Headers */ = {isa = PBXBuildFile; fileRef = E89ADB5E1E3B68FA00640A0C /* Hostess.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,13 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2AE806651CFDDE3200FDDB2F;
-			remoteInfo = Host;
-		};
 		E851308F1E8EBD25005BEBE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2AE8065D1CFDDE3200FDDB2F /* Project object */;
@@ -77,17 +68,14 @@
 /* Begin PBXFileReference section */
 		2AB7ACD01D5352EF00A5F64A /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE806661CFDDE3200FDDB2F /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E878BC501E76200D00F4C97E /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hostess.h; path = Hostess/Hostess.h; sourceTree = SOURCE_ROOT; };
-		E89ADB5F1E3B68FA00640A0C /* Hostess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hostess.swift; path = Hostess/Hostess.swift; sourceTree = SOURCE_ROOT; };
-		E89ADB641E3B694200640A0C /* HostessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostessTests.swift; path = HostessTests/HostessTests.swift; sourceTree = SOURCE_ROOT; };
-		E89ADB651E3B694200640A0C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HostessTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		E89ADB5E1E3B68FA00640A0C /* Hostess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hostess.h; sourceTree = SOURCE_ROOT; };
+		E89ADB5F1E3B68FA00640A0C /* Hostess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hostess.swift; sourceTree = SOURCE_ROOT; };
 		E8A36E8A1E7B41A100C3A3B1 /* Hostess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hostess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8B8D78E1E8C701A006C5A62 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Hostess/Info-iOS.plist"; sourceTree = "<group>"; };
-		E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Hostess/Info-macOS.plist"; sourceTree = "<group>"; };
-		E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Hostess/Info-tvOS.plist"; sourceTree = "<group>"; };
-		E8B8D7911E8C701A006C5A62 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Hostess/Info-watchOS.plist"; sourceTree = "<group>"; };
+		E8B8D78E1E8C701A006C5A62 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		E8B8D78F1E8C701A006C5A62 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		E8B8D7901E8C701A006C5A62 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		E8B8D7911E8C701A006C5A62 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AE8066D1CFDDE3200FDDB2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2AE806711CFDDE3200FDDB2F /* Hostess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				2AE806681CFDDE3200FDDB2F /* Hostess */,
-				2AE806741CFDDE3200FDDB2F /* HostessTests */,
 				2AE806841CFDE04200FDDB2F /* Supporting Files */,
 				2AE806671CFDDE3200FDDB2F /* Products */,
 			);
@@ -144,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				2AE806661CFDDE3200FDDB2F /* Hostess.framework */,
-				2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */,
 				2AB7ACD01D5352EF00A5F64A /* Hostess.framework */,
 				E878BC501E76200D00F4C97E /* Hostess.framework */,
 				E8A36E8A1E7B41A100C3A3B1 /* Hostess.framework */,
@@ -158,16 +136,7 @@
 				E89ADB5E1E3B68FA00640A0C /* Hostess.h */,
 				E89ADB5F1E3B68FA00640A0C /* Hostess.swift */,
 			);
-			path = Hostess;
-			sourceTree = "<group>";
-		};
-		2AE806741CFDDE3200FDDB2F /* HostessTests */ = {
-			isa = PBXGroup;
-			children = (
-				E89ADB641E3B694200640A0C /* HostessTests.swift */,
-				E89ADB651E3B694200640A0C /* Info.plist */,
-			);
-			path = HostessTests;
+			name = Hostess;
 			sourceTree = "<group>";
 		};
 		2AE806841CFDE04200FDDB2F /* Supporting Files */ = {
@@ -254,24 +223,6 @@
 			productReference = 2AE806661CFDDE3200FDDB2F /* Hostess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2AE8066F1CFDDE3200FDDB2F /* HostessTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2AE8067D1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "HostessTests" */;
-			buildPhases = (
-				2AE8066C1CFDDE3200FDDB2F /* Sources */,
-				2AE8066D1CFDDE3200FDDB2F /* Frameworks */,
-				2AE8066E1CFDDE3200FDDB2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2AE806731CFDDE3200FDDB2F /* PBXTargetDependency */,
-			);
-			name = HostessTests;
-			productName = HostTests;
-			productReference = 2AE806701CFDDE3200FDDB2F /* HostessTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E878BC4F1E76200D00F4C97E /* Hostess watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E878BC551E76200D00F4C97E /* Build configuration list for PBXNativeTarget "Hostess watchOS" */;
@@ -326,11 +277,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0910;
 					};
-					2AE8066F1CFDDE3200FDDB2F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 67BU7Q9MHN;
-						LastSwiftMigration = 0830;
-					};
 					E851308B1E8EBD13005BEBE9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 67BU7Q9MHN;
@@ -363,20 +309,12 @@
 				E878BC4F1E76200D00F4C97E /* Hostess watchOS */,
 				2AB7ACCF1D5352EF00A5F64A /* Hostess macOS */,
 				E8A36E891E7B41A100C3A3B1 /* Hostess tvOS */,
-				2AE8066F1CFDDE3200FDDB2F /* HostessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2AB7ACCE1D5352EF00A5F64A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AE8066E1CFDDE3200FDDB2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,14 +354,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AE8066C1CFDDE3200FDDB2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E89ADB6A1E3B6B7D00640A0C /* HostessTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E878BC4B1E76200D00F4C97E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,11 +373,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2AE806731CFDDE3200FDDB2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2AE806651CFDDE3200FDDB2F /* Hostess iOS */;
-			targetProxy = 2AE806721CFDDE3200FDDB2F /* PBXContainerItemProxy */;
-		};
 		E85130901E8EBD25005BEBE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2AE806651CFDDE3200FDDB2F /* Hostess iOS */;
@@ -481,7 +406,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Hostess/Info-macOS.plist";
+				INFOPLIST_FILE = "Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -489,7 +414,6 @@
 				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -503,7 +427,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Hostess/Info-macOS.plist";
+				INFOPLIST_FILE = "Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -511,7 +435,6 @@
 				PRODUCT_NAME = Hostess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -569,7 +492,7 @@
 				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -623,7 +546,7 @@
 				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -641,7 +564,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-iOS.plist";
+				INFOPLIST_FILE = "Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(inherited)";
@@ -650,7 +573,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -664,7 +586,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-iOS.plist";
+				INFOPLIST_FILE = "Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(inherited)";
@@ -672,33 +594,6 @@
 				PRODUCT_NAME = Hostess;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		2AE8067E1CFDDE3200FDDB2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 67BU7Q9MHN;
-				INFOPLIST_FILE = HostessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.HostTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		2AE8067F1CFDDE3200FDDB2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 67BU7Q9MHN;
-				INFOPLIST_FILE = HostessTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.HostTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -730,7 +625,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-watchOS.plist";
+				INFOPLIST_FILE = "Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Hostess;
@@ -739,7 +634,6 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -757,7 +651,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-watchOS.plist";
+				INFOPLIST_FILE = "Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Hostess;
@@ -765,7 +659,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -782,7 +675,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-tvOS.plist";
+				INFOPLIST_FILE = "Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Hostess;
@@ -791,7 +684,6 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -808,7 +700,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Hostess/Info-tvOS.plist";
+				INFOPLIST_FILE = "Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.empiricalmagic.Hostess;
@@ -816,7 +708,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -848,15 +739,6 @@
 			buildConfigurations = (
 				2AE8067B1CFDDE3200FDDB2F /* Debug */,
 				2AE8067C1CFDDE3200FDDB2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2AE8067D1CFDDE3200FDDB2F /* Build configuration list for PBXNativeTarget "HostessTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AE8067E1CFDDE3200FDDB2F /* Debug */,
-				2AE8067F1CFDDE3200FDDB2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
