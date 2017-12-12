@@ -28,6 +28,10 @@ Installing Hostess using Cocoapods, add the following line to your Podfile:
 
 Then run the `pod install` command. 
 
+### Swift Package Manager
+
+    swift run -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.11"
+
 ## Motivation
 
 Hostess.swift was created because NSHost is unavailable on iOS and CFHost does not offer the full functionality of it OS X counterpart.
