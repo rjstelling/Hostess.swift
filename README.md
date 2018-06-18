@@ -16,7 +16,7 @@ Hostess.swift is safe to use in a framework because it does not require a bridgi
 
 Adding Hostess to your Xcode project using Carthage is very straightforward:
 
-    github "rjstelling/Hostess" ~> 1.0
+    github "rjstelling/Hostess.swift"
 
 Run `carthage` to download and build the framework.
 
