@@ -6,6 +6,8 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/Hostess.svg)](https://cocoapods.org/pods/Hostess)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/rjstelling/Hostess.swift/blob/master/LICENSE)
 
+**UPDATE 2019: HOSTESS CANNOT READ THE SSID AS OF IOS 13**
+
 A Swift implementation of [NSHost (Host in Swift)](https://developer.apple.com/reference/foundation/host) that works on iOS, OS X and tvOS. 
 
 Hostess.swift is safe to use in a framework because it does not require a bridging header.
