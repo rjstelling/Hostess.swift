@@ -53,3 +53,7 @@ print("IP: \(deviceIP)") // Will print a dot-separated IP address, e.g: 17.24.2.
 With the switch to Swift 3 Apple removed the NS prefix from many Foundation classes. This caused Host to clash with the renamed NSHost.
 
 A new name was required... Hostess was chosen. 
+
+---
+
+[Contact](https://agent-mailbox.richardstelling.com/#contact)
